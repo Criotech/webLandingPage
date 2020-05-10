@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+.btn-reverse {
+    border-color: var(--dark-violet);
+    color: var(--dark-violet);
+}
+
+.wrapper {
+    background-image: url('./images/bg.svg');
+     background-repeat: no-repeat;
+    /* background-position: top left;  */
+    background-size: 800px; 
+    position: absolute;
+    background-position-x: -200px;
+    background-position-y: -80px;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 1000px;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex>div {
+    flex: 1;
+}
+
+/* Navigation Styling */
+nav {
+    width: 100vw;
+    padding: 20px 0;
+}
+
+.logoContainer {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 50px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 14px;
+}
+
+header {
+    height: 84.8vh;
+}
+
+.right {
+    padding-top: 100px;
+}
+
+.right h1 {
+    text-align: right;
+    line-height: 50px;
+}
+
+.right-base {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: #5AE2FF;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    border: 0;
+}
+
+.btn-reverse {
+    background-color: transparent;
+    color: #141414;
+}
+
+@media screen and (max-width: 768px) {
+    .right h1 {
+        text-align: right;
+        line-height: 50px;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .right h1 {
+        text-align: right;
+        line-height: 50px;
+    }   
+}
